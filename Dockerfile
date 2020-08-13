@@ -3,7 +3,7 @@
 # implementation for doing ARG based FROM instructions require replacing
 # the FROM with an already existing image (i.e. one we've previously built).
 # This prevents us from retrieving the latest image from RedHat.
-FROM ubi/ubi8:8.2
+FROM registry.access.redhat.com/ubi/ubi8:8.2
 
 LABEL name="ubi8"
 LABEL version="8.2"
