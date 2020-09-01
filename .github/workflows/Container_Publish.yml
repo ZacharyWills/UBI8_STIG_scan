@@ -3,8 +3,8 @@ name: Docker Container Publish
 on:
   push:
     # Publish `$default-branch` as Docker `latest` image.
-    branches:
-      - $default-branch
+    #branches:
+    #  - $default-branch
   schedule:
   - cron: '0 6 * * *'
 
