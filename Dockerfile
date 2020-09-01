@@ -64,5 +64,5 @@ RUN echo Update packages and install DISA STIG fixes && \
 
 ENV container oci
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-
+RUN yum update -y && yum clean all
 CMD ["/bin/bash"]
