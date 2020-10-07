@@ -25,8 +25,8 @@ jobs:
     - name: Run the local Anchore scan action itself with GitHub Advanced Security code scanning integration enabled
       uses: anchore/scan-action@v2
       with:
-        image-reference: "localbuild/testimage:latest"
-        dockerfile-path: "/home/runner/work/UBI8_STIG_scan/UBI8_STIG_scan/Dockerfile"
+        image: "localbuild/testimage:latest"
+        path: "/home/runner/work/UBI8_STIG_scan/UBI8_STIG_scan/Dockerfile"
         acs-report-enable: true
     - name: Upload Anchore Scan Report
       uses: github/codeql-action/upload-sarif@v1
